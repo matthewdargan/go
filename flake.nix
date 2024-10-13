@@ -34,6 +34,7 @@
             maintainers = with maintainers; [matthewdargan];
           };
           pname = "go";
+          postInstall = "rm $out/bin/acme";
           src = ./.;
           vendorHash = "sha256-qwoYzbfyek/472x24srND/9qX2UsiKzJleLV7cFDVsY=";
           version = "0.1.0";
